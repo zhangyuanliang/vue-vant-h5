@@ -1,60 +1,110 @@
-@import './github-light.css';
+@import './github-light.scss';
+@import './reset.scss';
 
-body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  font-style: normal;
-  text-decoration: none;
-  border: none;
-  font-weight: normal;
-  font-family: "Microsoft Yahei";
-  box-sizing: border-box;
-  -webkit-tap-highlight-color:transparent;
-  -webkit-font-smoothing: antialiased;
-  &:hover {
-    outline: none;
-  }
+.padding-top {
+  padding-top: 1.88rem;
 }
 
-/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
-::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-  background-color: #F5F5F5;  
+.cont-p {
+  padding: 0 .51rem;
 }
 
-/*定义滚动条轨道 内阴影+圆角*/
-::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 1px rgba(0,0,0,0);
-  -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);
-  border-radius: 10px;
-  background-color: #F5F5F5;  
+.cont-m {
+  margin: 0 .51rem;
 }
 
-/*定义滑块 内阴影+圆角*/  
-::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
-  background-color: #555;  
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
-  -webkit-appearance: none;
+.flex-s {
+  justify-content: flex-start;
 }
 
-textarea { -webkit-appearance: none;}
-
-html, body {
-  height: 100%;
-  width: 100%;
-  font-size: 0.6rem;
-  background-color: #FFF;
+.flex-c {
+  justify-content: center;
 }
 
-.back_img {
-  background-repeat: no-repeat;
+.flex-e {
+  justify-content: flex-end;
+}
+
+.flex-g {
+  flex-grow: 1;
+}
+
+.flex-b {
+  justify-content: space-between;
+}
+
+.flex-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.align-c {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.grey-bg {
+  background: #f0f0f0;
+}
+
+.font-6 {
+  font-size: .6rem;
+  color: #040404;
+}
+
+.font-7 {
+  font-size: .7rem;
+}
+
+.next-btn {
+  width: 10.71rem;
+  height: 1.71rem;
+  background: url(../assets/images/nextBtn@2x.png);
+  background-size: 100% 100%;
+}
+
+.scale8 {
+  transform: scale(.8);
+  transform-origin: 0 0;
+}
+
+.scale9 {
+  transform: scale(.9);
+  transform-origin: 0 0;
+}
+
+.blue {
+  color: #0265FF;
+}
+
+.grey6 {
+  color: #d1d0d0
+}
+
+.grey7 {
+  color: #737373
+}
+
+.yellow {
+  color: #FDA63F;
+}
+
+.more:after {
+  position: absolute;
+  content: '';
+  top: .15rem;
+  right: .28rem;
+  width: .3rem;
+  height: .51rem;
+  background: url(../assets/images/rightArrow@2x.png);
   background-size: 100% 100%;
 }
 
@@ -72,8 +122,11 @@ html, body {
   white-space: nowrap;
 }
 
-.padding-top {
-  padding-top: 1.88rem;
+.muti-ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 @keyframes backOpacity {
@@ -86,23 +139,4 @@ html, body {
 
 .animation_opactiy {
   animation: backOpacity 2s ease-in-out infinite;
-}
-
-.content-wrap {
-  padding: 0 .43rem !important;
-}
-
-.flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.flex-g {
-  flex-grow: 1;
-}
-
-.bg {
-  background: #f0f0f0;
 }

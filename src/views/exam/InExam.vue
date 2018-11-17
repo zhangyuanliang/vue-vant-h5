@@ -1,5 +1,5 @@
 <template>
-  <div class="inexam-wrap bg">
+  <div class="inexam-wrap grey-bg">
     <NavBar :title="title"></NavBar>
     <div class="flex title">
       <div class="l-1 flex-g">

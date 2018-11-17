@@ -2,8 +2,13 @@ $blue: #026CBD;
 $bc: #e4e4e4;
 $fc:#fff;
 
+@mixin scale-0($scale, $origin: 0) {
+  transform: scale($scale);
+  transform-origin: $origin $origin;
+}
+
 // 背景图片地址和大小
-@mixin bis($url) { 
+@mixin bis($url) {
 	background-image: url($url);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -16,6 +21,7 @@ $fc:#fff;
 	-o-border-radius: $radius;
 	border-radius: $radius;
 }
+
 //定位全屏
 @mixin allcover {
 	position: absolute;

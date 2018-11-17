@@ -1,5 +1,5 @@
 <template>
-  <div class="home-wrap bg">
+  <div class="home-wrap grey-bg">
     <Search></Search>
     <Swiper></Swiper>
     <div class="home-cls">
@@ -54,14 +54,14 @@
         </div>
       </div>
     </div>
-    <div class="panel-msg flex content-wrap">
+    <div class="panel-msg flex cont-p">
       <img src="../../assets/image/icoCheck.png" alt="">
       <div class="content">
         <p class="title">你有新的课程要学习啦</p>
         <p class="des ellipsis">【你有新的课程要学习啦】增员类课程又更新啦！请...</p>
       </div>
       <div class="arrow">
-        <img src="../../assets/image/arrowRight_grey.png" alt="">
+        <img src="../../assets/images/rightArrow@2x.png" alt="">
       </div>
     </div>
 

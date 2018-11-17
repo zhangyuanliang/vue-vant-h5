@@ -1,5 +1,5 @@
 <template>
-  <header class="head-top content-wrap">
+  <header class="head-top cont-p">
     <section class="head-goback" v-if="goBack" @click="$router.go(-1)">
       <svg width="100%" height="100%" viewBox="2 0 10 18" xmlns="http://www.w3.org/2000/svg" version="1.1">
         <polyline points="12,18 4,9 12,0" style="fill:none;stroke:#fff;stroke-width:1"/>

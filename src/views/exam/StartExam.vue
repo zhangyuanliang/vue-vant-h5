@@ -1,5 +1,5 @@
 <template>
-  <div class="exam-wrap bg">
+  <div class="exam-wrap grey-bg">
     <NavBar :title="title"></NavBar>
     <div class="banner">
       <img @click="goMain" src="../../assets/images/examBanner@2x.png" alt="">
